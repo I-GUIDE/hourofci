@@ -7,7 +7,7 @@
 
     <!-- load D3 -->
     <!-- <script src="https://rawcdn.githack.com/coopbri/hci-binder/362464110b5273593e9fdd1dc1c0ae3e4f1da224/lib/d3.min.js"></script> -->
-    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
     
     <!-- load jQuery (bundled with Jupyter; only needed outside of Jupyter) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -44,7 +44,7 @@
         .attr("width", grid_dim+170)
         .attr("height", grid_dim)
         .classed("main", true);
-      var table = body.append("img").attr("src", "https://rawcdn.githack.com/coopbri/hci-binder/0a0f8e02e3a3e7429f881b69634200d671c0f560/notebooks/geospatial-data/supplementary/table-2.png")
+      var table = body.append("img").attr("src", "https://raw.githack.com/hourofci/lessons-dev/master/beginner-lessons/geospatial-data/supplementary/table-2.png")
         .attr("width", 330)
         .attr("height", 350)
         .style("border", "2.5px solid gray")
@@ -53,68 +53,68 @@
       correct = 0;
 
       // draw spatial grid
-      svg.append("image").attr("xlink:href", "https://rawcdn.githack.com/coopbri/hci-binder/0a0f8e02e3a3e7429f881b69634200d671c0f560/notebooks/geospatial-data/supplementary/grid-2.svg")
+      svg.append("image").attr("xlink:href", "https://raw.githack.com/hourofci/lessons-dev/master/beginner-lessons/geospatial-data/supplementary/grid-2.svg")
         .attr("width", grid_dim)
         .attr("height", grid_dim);
 
       // draw shapes
-      svg.append("image").attr("xlink:href", "https://rawcdn.githack.com/coopbri/hci-binder/0a0f8e02e3a3e7429f881b69634200d671c0f560/notebooks/geospatial-data/supplementary/1-circle.svg")
+      svg.append("image").attr("xlink:href", "https://raw.githack.com/hourofci/lessons-dev/master/beginner-lessons/geospatial-data/supplementary/1-circle.svg")
         .classed("shape", true)
         .attr("id", "circle")
         .attr("x", 435)
         .attr("y", 0)
         .attr("width", shape_dim)
         .attr("height", shape_dim);
-      svg.append("image").attr("xlink:href", "https://rawcdn.githack.com/coopbri/hci-binder/0a0f8e02e3a3e7429f881b69634200d671c0f560/notebooks/geospatial-data/supplementary/2-star.svg")
+      svg.append("image").attr("xlink:href", "https://raw.githack.com/hourofci/lessons-dev/master/beginner-lessons/geospatial-data/supplementary/2-star.svg")
         .classed("shape", true)
         .attr("id", "star")
         .attr("x", 485)
         .attr("y", 0)
         .attr("width", shape_dim)
         .attr("height", shape_dim);
-      svg.append("image").attr("xlink:href", "https://rawcdn.githack.com/coopbri/hci-binder/0a0f8e02e3a3e7429f881b69634200d671c0f560/notebooks/geospatial-data/supplementary/3-square.svg")
+      svg.append("image").attr("xlink:href", "https://raw.githack.com/hourofci/lessons-dev/master/beginner-lessons/geospatial-data/supplementary/3-square.svg")
         .classed("shape", true)
         .attr("id", "square")
         .attr("x", 535)
         .attr("y", 0)
         .attr("width", shape_dim)
         .attr("height", shape_dim);
-      svg.append("image").attr("xlink:href", "https://rawcdn.githack.com/coopbri/hci-binder/0a0f8e02e3a3e7429f881b69634200d671c0f560/notebooks/geospatial-data/supplementary/4-hexagon.svg")
+      svg.append("image").attr("xlink:href", "https://raw.githack.com/hourofci/lessons-dev/master/beginner-lessons/geospatial-data/supplementary/4-hexagon.svg")
         .classed("shape", true)
         .attr("id", "hexagon")
         .attr("x", 435)
         .attr("y", 50)
         .attr("width", shape_dim)
         .attr("height", shape_dim);
-      svg.append("image").attr("xlink:href", "https://rawcdn.githack.com/coopbri/hci-binder/0a0f8e02e3a3e7429f881b69634200d671c0f560/notebooks/geospatial-data/supplementary/5-diamond.svg")
+      svg.append("image").attr("xlink:href", "https://raw.githack.com/hourofci/lessons-dev/master/beginner-lessons/geospatial-data/supplementary/5-diamond.svg")
         .classed("shape", true)
         .attr("id", "diamond")
         .attr("x", 485)
         .attr("y", 50)
         .attr("width", shape_dim)
         .attr("height", shape_dim);
-      svg.append("image").attr("xlink:href", "https://rawcdn.githack.com/coopbri/hci-binder/0a0f8e02e3a3e7429f881b69634200d671c0f560/notebooks/geospatial-data/supplementary/6-ellipse.svg")
+      svg.append("image").attr("xlink:href", "https://raw.githack.com/hourofci/lessons-dev/master/beginner-lessons/geospatial-data/supplementary/6-ellipse.svg")
         .classed("shape", true)
         .attr("id", "ellipse")
         .attr("x", 535)
         .attr("y", 50)
         .attr("width", shape_dim)
         .attr("height", shape_dim);
-      svg.append("image").attr("xlink:href", "https://rawcdn.githack.com/coopbri/hci-binder/0a0f8e02e3a3e7429f881b69634200d671c0f560/notebooks/geospatial-data/supplementary/7-triangle.svg")
+      svg.append("image").attr("xlink:href", "https://raw.githack.com/hourofci/lessons-dev/master/beginner-lessons/geospatial-data/supplementary/7-triangle.svg")
         .classed("shape", true)
         .attr("id", "triangle")
         .attr("x", 435)
         .attr("y", 100)
         .attr("width", shape_dim)
         .attr("height", shape_dim);
-      svg.append("image").attr("xlink:href", "https://rawcdn.githack.com/coopbri/hci-binder/0a0f8e02e3a3e7429f881b69634200d671c0f560/notebooks/geospatial-data/supplementary/8-pentagon.svg")
+      svg.append("image").attr("xlink:href", "https://raw.githack.com/hourofci/lessons-dev/master/beginner-lessons/geospatial-data/supplementary/8-pentagon.svg")
         .classed("shape", true)
         .attr("id", "pentagon")
         .attr("x", 485)
         .attr("y", 100)
         .attr("width", shape_dim)
         .attr("height", shape_dim);
-      svg.append("image").attr("xlink:href", "https://rawcdn.githack.com/coopbri/hci-binder/0a0f8e02e3a3e7429f881b69634200d671c0f560/notebooks/geospatial-data/supplementary/9-decagon.svg")
+      svg.append("image").attr("xlink:href", "https://raw.githack.com/hourofci/lessons-dev/master/beginner-lessons/geospatial-data/supplementary/9-decagon.svg")
         .classed("shape", true)
         .attr("id", "decagon")
         .attr("x", 535)
